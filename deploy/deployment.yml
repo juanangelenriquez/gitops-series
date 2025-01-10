@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: echobot2
-  namespace: gitops-series
+  namespace: gitops-series2
   labels:
     app: echobot2
 spec:
