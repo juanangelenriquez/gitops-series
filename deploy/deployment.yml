@@ -9,7 +9,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      name: echobot
+      name: echobot2
   strategy:
     type: RollingUpdate
   template:
