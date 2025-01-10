@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: echobot2
-  namespace: gitops-series2
+  namespace: gitops-series
   labels:
     name: echobot2
 spec:
@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: echobot
-        image: ghcr.io/sngular/gitops-echobot:v0.1.0 # {"\$imagepolicy": "flux-system:echobot"}
+        image: ghcr.io/sngular/gitops-echobot:v0.1.0 # {"\$imagepolicy": "gitops-series:echobot2"}
         env:
         - name: CHARACTER
           value: "Esperando la actualización de imagen automágica!"
