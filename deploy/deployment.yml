@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: echobot
-        image: ghcr.io/sngular/gitops-echobot:v0.1.0 # {"\$imagepolicy": "gitops-series:echobot2"}
+        image: ghcr.io/sngular/gitops-echobot:v0.1.0  # {"\$imagepolicy": "gitops-series:echobot2"}
         env:
         - name: CHARACTER
           value: "Esperando la actualización de imagen automágica!"
